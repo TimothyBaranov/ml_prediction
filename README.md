@@ -53,7 +53,7 @@ python3 scripts/lstm_model.py
 
 ```markdown
 ### Пояснения
-
+- В Windows пути к файлам и папкам указываются с использованием обратных слэшей (`\`), 
 - Вместо `pip install -r requirements.txt` используется `pip3 install -r requirements.txt`.
 - Все команды для запуска скриптов указаны с использованием `python3`.
 ```
