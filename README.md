@@ -18,32 +18,42 @@ ml_stock_prediction/
 ├── requirements.txt # Файл с зависимостями
 └── README.md # Описание проекта
 
+
 ## Установка
 
 1. Клонируйте репозиторий:
-#репризоторий + url  
+
+```bash
+git clone <repository_url>
 cd ml_stock_prediction
+```
+Установите зависимости:
+```
+ install -r requirements.txt
+```
+Запуск
+Загрузка данных
+Для загрузки данных выполните следующую команду:
 
-2. Установите зависимости:
+```bash
+python3 scripts/download_data.py
+```
+ARIMA модель
+Для запуска модели ARIMA выполните:
+```bash
+python3 scripts/arima_model.py
+```
+LSTM модель
+Для запуска модели LSTM выполните:
+```
+python3 scripts/lstm_model.py
+```
+Дополнительные комментарии
+Убедитесь, что все необходимые зависимости установлены перед запуском скриптов.
 
-pip install -r requirements.txt
+```markdown
+### Пояснения
 
-
-## Запуск
-
-### Загрузка данных
-
-Запустите скрипт для загрузки данных:
-
-python scripts/download_data.py
-
-### ARIMA модель
-
-Запустите скрипт для модели ARIMA:
-
-python scripts/arima_model.py
-
-## Дополнительные комментарии
-
-- Пожалуйста, убедитесь, что у вас установлены все необходимые зависимости перед запуском скриптов.
-# ml_prediction
+- Вместо `pip install -r requirements.txt` используется `pip3 install -r requirements.txt`.
+- Все команды для запуска скриптов указаны с использованием `python3`.
+```
